@@ -26,6 +26,12 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0 auto;
 }
 
+.container__footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
 /*Интро*/
 
 .intro {
@@ -209,7 +215,7 @@ h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 30px;
 }
 
-.section--img{
+.section--img {
     background: url('../images/happy__clients.jpg') center no-repeat;
     background-size: cover;
     height: 830px;
@@ -222,7 +228,7 @@ h1, h2, h3, h4, h5, h6, p {
     text-align: center;
 }
 
-.section__header--clients{
+.section__header--clients {
     margin-bottom: 120px;
 }
 
@@ -600,11 +606,11 @@ hr {
     color: #b6b6b6;
 }
 
-.social__prof--clients{
+.social__prof--clients {
     margin-bottom: 0;
 }
 
-.social__prof:after{
+.social__prof--clients:after {
     content: "";
     display: block;
     width: 60px;
@@ -695,19 +701,19 @@ hr {
     font-weight: 300;
 }
 
-.clients{
+.clients {
     display: flex;
     justify-content: flex-start;
     width: 100%;
 }
 
-.clients__block{
+.clients__block {
     display: flex;
     width: 50%;
     flex-flow: column;
 }
 
-.clients__content{
+.clients__content {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -715,15 +721,277 @@ hr {
     margin-bottom: 60px;
 }
 
-.clients__img{
+.clients__img {
     padding-right: 40px;
 }
 
-.clients__social{
+.clients__social {
     text-align: start;
 }
 
-.client__message{
+.client__message {
     font-style: italic;
     font-weight: 300;
+}
+
+/* Блог */
+
+.blog {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.blog__content {
+    margin-right: 30px;
+    position: relative;
+}
+
+.blog__name {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.blog__message {
+    font-style: italic;
+    font-weight: 300;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #e5e5e5;
+    height: 100px;
+}
+
+.blog__data {
+    position: absolute;
+    top: 45%;
+    width: 60px;
+    height: 70px;
+    left: -10px;
+    transform: translate(0, -50%);
+    z-index: 5;
+    background-color: #95e1d3;
+    text-align: center;
+}
+
+.blog__day {
+    font-weight: 700;
+    font-size: 30px;
+    max-height: 35px;
+    color: #fff;
+}
+
+.blog__month {
+    font-weight: 300;
+    font-style: italic;
+    color: #f9fdfc
+}
+
+.blog__review {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.blog__icon {
+    color: #b5eae0;
+    font-size: 16px;
+    margin-right: 2%;
+}
+
+.blog__number {
+    margin-right: 5%;
+    font-size: 16px;
+    color: #cccccc;
+}
+
+/* Карта */
+
+.map {
+    margin-top: 115px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    background: url('../images/map.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.map__name {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    color: #f38181;
+}
+
+.map__name:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 20px auto;
+}
+
+/* мого футер */
+
+.mogo__footer {
+    width: 100%;
+    height: 560px;
+}
+
+.mogo__follow {
+    display: block;
+    width: 500px;
+    margin-right: 30px;
+}
+
+.follow__title {
+    font-size: 46px;
+    font-weight: 700;
+    color: #cccccc;
+}
+
+.follow__text {
+    color: #999999;
+    margin: 40px 0;
+}
+
+.follow__count {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.follow__big {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.follow__small {
+    font-size: 14px;
+}
+
+.follow__line {
+    margin: 20px 0;
+}
+
+.follow__us {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.us__title {
+    font-style: italic;
+    font-weight: 300;
+    color: #c3c3c3;
+    margin-right: 20px;
+}
+
+.us__icons {
+    display: flex;
+    justify-content: flex-start;
+    color: #95e1d3;
+}
+
+.us__icon {
+    font-size: 18px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.follow__input {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 40px;
+}
+
+.follow__button {
+    width: 150px;
+    height: 30px;
+    background-color: #95e1d3;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.us__input {
+    border: 1px solid #e7e7e7;
+    border-right: none;
+}
+
+.us__input::placeholder {
+    color: #d2d2d2;
+    padding-left: 10px;
+}
+
+.mogo__blogs {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column;
+    width: 400px;
+}
+
+.blogs__content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.blogs__item {
+    margin-left: 20px;
+    margin-right: 80px;
+}
+
+.blogs__name {
+    font-size: 12px;
+}
+
+.blogs__data {
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 300;
+    color: #b4b4b4;
+}
+
+.mogo__instagram {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column;
+    width: 300px;
+}
+
+.foot__name {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.instagram__footer {
+    font-style: italic;
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+/* Конец */
+
+.end{
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+}
+
+.end__text{
+    color: #f4a4a4;
 }
