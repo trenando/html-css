@@ -24,6 +24,7 @@ h1, h2, h3, h4, h5, h6, p {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .container__footer {
@@ -61,7 +62,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .intro__title {
     color: #fff;
-    font-size: 120px;
+    font-size: 135px;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1;
@@ -71,7 +72,7 @@ h1, h2, h3, h4, h5, h6, p {
 .intro__title:after {
     content: "";
     display: block;
-    margin: 40px auto;
+    margin: 30px auto;
     /*t60+l auto+r auto+b60*/
     width: 60px;
     height: 3px;
@@ -150,7 +151,7 @@ h1, h2, h3, h4, h5, h6, p {
 .btn {
     display: inline-block;
     vertical-align: top;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     padding: 8px 30px;
     border: 3px solid #fff;
     color: #fff;
@@ -218,7 +219,7 @@ h1, h2, h3, h4, h5, h6, p {
 .section--img {
     background: url('../images/happy__clients.jpg') center no-repeat;
     background-size: cover;
-    height: 830px;
+    height: 100%;
 }
 
 .section__header {
@@ -271,6 +272,7 @@ h1, h2, h3, h4, h5, h6, p {
     position: relative;
     /*Родненький*/
     background-color: #95e1d3;
+    margin: 10px;
 }
 
 /* Делает анимацию сдвига и оранжевый цвет*/
@@ -294,6 +296,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .card__img img {
     display: block;
+    width: 100%;
     transition: opacity .1s linear;
 }
 
@@ -354,24 +357,22 @@ h1, h2, h3, h4, h5, h6, p {
 
 .services {
     display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .services__item {
-    flex: 1 1 0;
-    padding-left: 85px;
-    padding-right: 35px;
-    position: relative;
+    display: flex;
+    max-width: 400px;
 }
 
 .services__img {
-    position: absolute;
-    top: 0;
-    left: 25px;
+    padding: 0 30px;
 }
 
 .services__title {
     font-size: 14px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     text-transform: uppercase;
 }
 
@@ -386,6 +387,11 @@ h1, h2, h3, h4, h5, h6, p {
 
 .services__list {
     width: 50%;
+    margin-left: 30px;
+}
+
+.services__human {
+    width: 100%;
 }
 
 .services__footer {
@@ -406,12 +412,7 @@ h1, h2, h3, h4, h5, h6, p {
 /* Выдвигающийся текст по нажатию */
 
 .accordion {
-    margin-bottom: 125px;
-}
-
-.accordion__item {
-    border-left: 1px solid #e5e5e5;
-    border-right: 1px solid #e5e5e5;
+    margin-bottom: 120px;
 }
 
 .accordion__header {
@@ -421,6 +422,12 @@ h1, h2, h3, h4, h5, h6, p {
     justify-content: flex-start;
     align-items: center;
     cursor: pointer;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.accordion__header:first-child {
+    margin-top: 0px;
 }
 
 .accordion__header:after {
@@ -438,10 +445,16 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .accordion__content {
+    display: block;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
     padding: 15px 20px;
     color: #999;
     font-style: italic;
     font-weight: 300;
+    max-height: 180px;
+    overflow-y: auto;
 }
 
 .accordion__title {
@@ -473,9 +486,11 @@ hr {
 
 .devices__item {
     display: block;
+    width: 78.33%;
 }
 
 .devices__item--iPhone {
+    width: 33.33%;
     position: absolute;
     bottom: -80px;
     right: 0;
@@ -513,7 +528,7 @@ hr {
 }
 
 .reviews__people {
-    padding: 45px 40px;
+    padding: 45px 0;
     margin-left: 80px;
     margin-right: 25px;
     align-items: center;
@@ -626,10 +641,20 @@ hr {
     background-color: #f8f8f8;
     width: 100%;
     height: 250px;
+    justify-content: center;
+}
+
+.logos__size{
+    display: flex;
     justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
     align-items: center;
-    padding-left: 6%;
-    padding-right: 6%;
+    padding: 0 10px;
+}
+
+.logos__img{
+    width: 100%;
 }
 
 /* Работы */
@@ -745,6 +770,10 @@ hr {
 .blog__content {
     margin-right: 30px;
     position: relative;
+}
+
+.blog__img{
+    width: 100%;
 }
 
 .blog__name {
@@ -984,7 +1013,7 @@ hr {
 
 /* Конец */
 
-.end{
+.end {
     display: flex;
     height: 60px;
     justify-content: center;
@@ -992,6 +1021,201 @@ hr {
     font-size: 14px;
 }
 
-.end__text{
+.end__text {
     color: #f4a4a4;
+}
+
+/* Медиа */
+
+@media (max-width: 1230px) {
+    /* Интро */
+    .intro__top {
+        font-size: 52px;
+    }
+    .intro__title {
+        font-size: 100px;
+    }
+    /* Аккордион */
+    .accordion {
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 990px) {
+    /* Интро */
+    .intro__top {
+        font-size: 32px;
+    }
+    .intro__title {
+        font-size: 90px;
+    }
+    /* Аккордион */
+    .accordion {
+        margin-bottom: 80px;
+    }
+    /* ревью */
+    .reviews__text {
+        font-size: 20px;
+    }
+    /* Социал */
+    .social__item {
+        width: 45px;
+        height: 45px;
+        font-size: 25px;
+    }
+    /* Клиент */
+    .client__message{
+        display: none;
+    }
+}
+
+@media (max-width: 770px) {
+    /* Интро */
+    .intro__top {
+        font-size: 26px;
+    }
+    .intro__title {
+        font-size: 70px;
+    }
+    /* Навигация */
+    .nav {
+        display: none;
+    }
+    /* Секция */
+    .section {
+        padding: 40px 0;
+    }
+    /* Слайдер */
+    .slider__text {
+        display: none;
+    }
+    /* Кард */
+    .card__text {
+        font-size: 14px;
+    }
+    .card__item:hover .card__img {
+        transform: translate(-5px, -5px);
+    }
+    /* Статистикс */
+    .stat__item {
+        padding: 50px 15px;
+    }
+    .stat__count {
+        font-size: 48px;
+    }
+    .stat__text {
+        font-size: 12px;
+    }
+    /*  сервисы */
+    .services {
+        flex-flow: column;
+        align-items: center;
+    }
+    .services__item {
+        margin-bottom: 20px;
+    }
+    .services__content {
+        flex-flow: column;
+        align-items: center;
+    }
+    /* Аккордион */
+    .accordion {
+        margin-bottom: 60px;
+    }
+    .accordion__content {
+        display: none;
+    }
+    /* ревью */
+    .reviews__text {
+        font-size: 14px;
+    }
+    /* Социал */
+    .social__item {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        padding: 6px 4px;
+    }
+    .social__name{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 575px) {
+    /* Интро */
+    .intro__top {
+        font-size: 22px;
+    }
+    .intro__title {
+        font-size: 50px;
+    }
+    /* Кнопка */
+    .btn {
+        margin-bottom: 10px;
+    }
+    /* Секция */
+    .section__header {
+        margin-bottom: 30px;
+    }
+    .section__title {
+        font-size: 24px;
+    }
+    .section__toptitle {
+        font-size: 20px;
+    }
+    .section__title:after {
+        margin: 20px auto;
+    }
+    /* Кард */
+    .card__text {
+        font-size: 8px;
+    }
+    .card__item:hover .card__img {
+        transform: translate(-3px, -3px);
+    }
+    /* Статистикс */
+    .stat__item {
+        padding: 30px 10px;
+    }
+    .stat__count {
+        font-size: 30px;
+    }
+    .stat__text {
+        display: none;
+    }
+    /* Аккордион */
+    .accordion {
+        margin-bottom: 40px;
+    }
+    /* ревью */
+    .reviews__item {
+        display: none;
+    }
+    .reviews__img {
+        margin: 0 70px;
+    }
+    .reviews__people{
+        margin: 0 70px;
+    }
+    /* Логос */
+    .logos {
+        height: 200px;
+    }
+    /* ревью */
+    .clients__content{
+        flex-flow: column;
+    }
+    .social__phone{
+        text-align: center;
+        margin-top: 25px;
+    }
+    .social__name{
+        font-size: 10px;
+    }
+    .social__prof--clients:after{
+        display: none;
+    }
+    .client__message{
+        display: none;
+    }
 }
