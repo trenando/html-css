@@ -499,7 +499,6 @@ hr {
 /* Блок футер ревью */
 
 .reviews {
-    height: 100%;
     max-width: 1200px;
     display: flex;
     align-items: center;
@@ -644,7 +643,7 @@ hr {
     justify-content: center;
 }
 
-.logos__size{
+.logos__size {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
@@ -653,7 +652,7 @@ hr {
     padding: 0 10px;
 }
 
-.logos__img{
+.logos__img {
     width: 100%;
 }
 
@@ -770,9 +769,11 @@ hr {
 .blog__content {
     margin-right: 30px;
     position: relative;
+    width: 400px;
+    box-sizing: content-box;
 }
 
-.blog__img{
+.blog__img {
     width: 100%;
 }
 
@@ -793,8 +794,8 @@ hr {
 .blog__data {
     position: absolute;
     top: 45%;
-    width: 60px;
-    height: 70px;
+    width: 55px;
+    height: 65px;
     left: -10px;
     transform: translate(0, -50%);
     z-index: 5;
@@ -1004,6 +1005,21 @@ hr {
     margin-bottom: 40px;
 }
 
+.instagram__img {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1px;
+    max-height: 89px;
+}
+
+.instagram__photo {
+    margin-right: 1px;
+}
+
+.instagram__photo img {
+    width: 100%;
+}
+
 .instagram__footer {
     font-style: italic;
     font-size: 13px;
@@ -1063,9 +1079,42 @@ hr {
         height: 45px;
         font-size: 25px;
     }
+    .social__prof{
+        margin-bottom: 80px;
+    }
     /* Клиент */
-    .client__message{
-        display: none;
+    .clients {
+        flex-flow: column;
+    }
+    .clients__block {
+        width: 100%;
+    }
+    /* Блог */
+    .blog__data {
+        width: 45px;
+        height: 55px;
+        top: 35%;
+    }
+    .blog__day {
+        font-size: 26px;
+        max-height: 30px;
+    }
+    /* Футер */
+    .container__footer {
+        flex-flow: column;
+        align-items: center;
+    }
+    .mogo__follow {
+        margin-left: 10px;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .mogo__blogs {
+        width: 100%;
+    }
+    .mogo__instagram {
+        align-items: center;
+        width: 100%;
     }
 }
 
@@ -1085,11 +1134,25 @@ hr {
     .section {
         padding: 40px 0;
     }
+    .section--devices {
+        padding-bottom: 0;
+    }
     /* Слайдер */
     .slider__text {
         display: none;
     }
     /* Кард */
+    .card {
+        flex-flow: column;
+    }
+    .card__item{
+        margin: 10px auto;
+        width: 70%;
+    }
+    .card__height {
+        width: 70%;
+        margin: 0 auto;
+    }
     .card__text {
         font-size: 14px;
     }
@@ -1110,6 +1173,9 @@ hr {
     .services {
         flex-flow: column;
         align-items: center;
+    }
+    .services__list {
+        width: 75%;
     }
     .services__item {
         margin-bottom: 20px;
@@ -1136,8 +1202,34 @@ hr {
         font-size: 16px;
         padding: 6px 4px;
     }
-    .social__name{
+    .social__name {
         font-size: 12px;
+    }
+    .social__prof{
+        margin-bottom: 30px;
+    }
+    .clients__content {
+        padding-left: 0;
+    }
+    /* Блог */
+    .blog {
+        flex-flow: column;
+        align-items: center;
+    }
+    .blog__data {
+        width: 50px;
+        height: 60px;
+        top: 37%;
+    }
+    .blog__message {
+        padding-bottom: 20px;
+    }
+    .blog__review {
+        margin: 15px 0;
+    }
+    .blog__content {
+        width: 300px;
+        margin: 0;
     }
 }
 
@@ -1167,6 +1259,10 @@ hr {
         margin: 20px auto;
     }
     /* Кард */
+    .card__height {
+        width: 90%;
+        margin-bottom: 20px;
+    }
     .card__text {
         font-size: 8px;
     }
@@ -1188,34 +1284,34 @@ hr {
         margin-bottom: 40px;
     }
     /* ревью */
-    .reviews__item {
-        display: none;
-    }
     .reviews__img {
-        margin: 0 70px;
+        margin: 0 0 0 50px;
+        padding: 0 5px;
     }
-    .reviews__people{
-        margin: 0 70px;
+    .reviews__img img {
+        width: 100%;
+    }
+    .reviews__people {
+        margin: 0 0 0 50px;
+    }
+    .reviews__item {
+        margin-left: 20px;
+    }
+    .reviews__text {
+        margin-right: 50px;
+    }
+    .reviews__people img {
+        width: 100%;
     }
     /* Логос */
     .logos {
         height: 200px;
     }
-    /* ревью */
-    .clients__content{
-        flex-flow: column;
-    }
-    .social__phone{
-        text-align: center;
-        margin-top: 25px;
-    }
-    .social__name{
+    /* Социал */
+    .social__name {
         font-size: 10px;
     }
-    .social__prof--clients:after{
-        display: none;
-    }
-    .client__message{
-        display: none;
+    .social__prof{
+        margin-bottom: 0;
     }
 }
